@@ -1,0 +1,400 @@
+/* ===================== */
+/* BASIC SETUP */
+/* ===================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Mali', cursive;
+    text-rendering:optimizeLegibility;
+    line-height: 1.3;
+    font-size: 1.6rem;
+}
+ul li {
+    list-style-type: none
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Balsamiq Sans', cursive;
+    color: #212529;
+}
+:focus {
+  outline: 0;
+}
+/* ===================== */
+/* REUSABLE COMPONENTS */
+/* ===================== */
+.row{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+section{
+    padding: 5rem 0;
+}
+/* heading */
+h2{
+    color: #212529;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.little-description{
+    color: #6c757d;
+    font-size: 1.5rem;
+}
+/* BUTTON */
+.btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.8rem;
+    background: linear-gradient(to right, #4458dc, #854fee);
+    padding: 1.2rem 3rem;
+    display: inline-block;
+    border-radius: .3rem;
+    border: .2rem solid #4458dc;
+}
+h3::after{
+    content: "";
+    display: inline-block;
+    height: .2rem;
+    background: #191919;
+    width: 20rem;
+    margin-left: 5%;
+}
+.description{
+    color: #777777;
+    font-size: 1.5rem;
+}
+/* ===================== */
+/* HEADER SECTION */
+/* ===================== */
+header{
+    background: url(img/home-banner.png);
+    height: 100vh;
+    position: relative;
+}
+.logo{
+    float: left;
+    margin-top: 1.5rem;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    border: .2rem solid #191919
+}
+.main-nav{
+    float: right;
+    margin-top: 3rem;
+}
+.main-nav li{
+    display: inline-block;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-left: 5rem;
+
+}
+.main-nav li a{
+  text-decoration: none;
+  color: #000000;
+}
+.main-nav li:first-child {
+    margin-left: 0;
+}
+.main-nav li:hover a {
+    color: #4458dc;
+    cursor: pointer;
+
+}
+.header-image{
+    width: 55rem;
+}
+.hero-text-box{
+    position: absolute;
+    top: 20rem;
+}
+.hero-text-box h3{
+    font-size: 5rem;
+    font-style: italic;
+    font-weight: 400;
+    display: inline;
+
+}
+.hero-text-box h1{
+    font-size: 10rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.hero-text-box h4{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: -1rem;
+    text-transform: capitalize;
+}
+.hero-text-box .col:first-child{
+    margin-top: 10rem;
+}
+.btn-hero{
+    margin-top: 2rem;
+}
+#header-btn1:hover{
+    background: #fff;
+    color: #191919;
+    transition: .3s;
+}
+#header-btn2{
+    background: #fff;
+    color: #191919;
+    margin-left: 2rem;
+}
+#header-btn2:hover{
+    background:  linear-gradient(to right, #4458dc, #854fee);
+    color: #fff;
+    transition: .3s;
+}
+.sticky{
+  position: fixed;
+  right: 0;
+  left: 0;
+  background: #fff;
+  z-index: 9999;
+  box-shadow: 1px 1px 20px #333;
+}
+.sticky .logo{
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1.2rem;
+}
+/* ===================== */
+/* ABOUT SECTION */
+/* ===================== */
+.about-section {
+    margin-top: 20rem;
+}
+.about-image{
+    width: 98%;
+}
+.about-section h2{
+    letter-spacing: 2.1rem;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+.about-section .description{
+    margin-bottom: 3rem;
+    width: 45rem;
+    line-height: 1.50;
+}
+.about-section .about-btn{
+    margin-top: 2rem;
+}
+.about-section .about-btn:hover{
+    background: #fff;
+    color: #191919;
+    transition: .5s;
+}
+/* ===================== */
+/* SERVICES SECTION */
+/* ===================== */
+.services-section{
+    text-align: center;
+}
+.services-section h2{
+    margin-bottom: 2rem;
+}
+.services-section .row:last-child{
+    width: 100rem;
+    background: #F8FCFD;
+    overflow: hidden;
+    padding: 2rem;
+    margin: auto;
+}
+.services-section .box{
+  margin-top: 10rem;
+}
+.services-logo{
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+}
+.services-section h5{
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #212529;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+.services-section .little-description{
+    margin-bottom: 3rem;
+}
+.services-section .box{
+    padding: 1rem 2.5rem;
+}
+.services-section .box:hover{
+    box-shadow: -5px 5px 20px rgba(0,0,0,0.2),5px -5px 20px rgba(0,0,0,0.2);
+    transition: .5s;
+}
+/* ===================== */
+/* PORTFOLIO SECTION */
+/* ===================== */
+.portfolio-section{
+}
+.portfolio-section h2{
+    margin-bottom: 4rem;
+}
+.portfolio-filter button{
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    margin-right: 5rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+.portfolio-section h4{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.portfolio-section span{
+    color: #6c757d;
+}
+.portfolio-image{
+    margin-bottom: 2rem;
+}
+.portfolio-image:hover{
+    box-shadow: 5px 5px 100px rgba(0,0,0,0.2),-5px -5px 100px rgba(0,0,0,0.2);
+    filter: brightness(105%);
+}
+.portfolio-section .box:nth-child(4){
+    margin-left: 0;
+}
+/* ===================== */
+/* TESTIMONIAL SECTION */
+/* ===================== */
+.testimonial-section{
+    text-align: center;
+    margin-bottom: 10rem;
+}
+.testimonial-section .description{
+    width: 100rem;
+    margin: auto;
+}
+.testimonial-section .little-description{
+    width: 50rem;
+    text-align: left;
+}
+.t-image{
+    float: left;
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    margin-right: 5rem;
+}
+.testimonial-section h4{
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.testimonial-section .box{
+    padding: 3rem;
+    box-shadow:
+    5px 5px 30px rgba(0,0,0,0.2), -5px -5px 30px rgba(0,0,0,0.2);
+    margin-top: 12rem;
+}
+.testimonial-section .row:last-child{
+    width: 110rem;
+    margin: auto;
+}
+/* ===================== */
+/* CONTACT SECTION */
+/* ===================== */
+.contact-section{
+    text-align: center;
+
+}
+.contact-section .container{
+    background: url(img/subscribe-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 8rem;
+    border-radius: .5rem;
+    width: 120rem;
+    margin: auto;
+}
+.contact-section h2{
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.contact-section .description{
+    color: #fff;
+    margin-bottom: 4rem;
+}
+.contact-section form{
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 2rem;
+}
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea{
+    width: 100%;
+    background: transparent;
+    border: .1rem solid #fff;
+    border-radius: .3rem;
+    padding: 1.2rem;
+    margin: 0.5rem 0;
+    color: #fff;
+}
+.contact-section form ::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+.btn-submit{
+    background: #fff;
+    color: #191919;
+}
+.btn-submit:hover{
+    cursor: pointer;
+}
+/* ===================== */
+/* FOOTER SECTION */
+/* ===================== */
+.footer-section {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.rony{
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  border: 2px solid #191919;
+  margin-bottom: 2rem;
+}
+.footer-section h5{
+  color: #212529;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+.footer-section .social-icons li{
+  display: inline-block;
+  margin-left: 7rem;
+  margin-bottom: 3rem;
+}
+.footer-section .social-icons li:first-child{
+  margin-left: 0;
+}
+.footer-section .social-icons li:hover a{
+  color: blue;
+}
+.footer-section .social-icons a{
+  color: #777777;
+  font-size: 2rem;
+}
+.footer-section p{
+  display: inline-block;
+}
